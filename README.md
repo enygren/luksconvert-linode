@@ -15,6 +15,10 @@ Approach is to:
 Note that this leaves some extra space (eg, 3.3GB currently) unused on the host.
 In the future it may be preferable to reclaim this.
 
+Note also that I rely on accessing the Linode over IPv6, so if you
+only have IPv4 connectivity where you're running this you may need to
+adapt accordingly.
+
 Note also that the bootloader partition (which contains
 the kernel and initramdisk) is not encrypted.  SSH'ing into the initramdisk
 is needed on each bootup to decrypt the root partition and resume boot.
@@ -26,6 +30,7 @@ Dependencies:
 
 ```
 pip3 install linode-cli
+apt install jq
 ```
 
 Example:
