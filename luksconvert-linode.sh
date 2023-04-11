@@ -13,6 +13,7 @@
 # TODO: Delete swap to free up even more space
 # TODO: See if there is a way to not waste the space from sda
 # TODO: Factor out configuration
+# TODO: Disable helpers to avoid confusion with the new profile
 #
 # Dependencies:
 #     pip3 install linode-cli  
